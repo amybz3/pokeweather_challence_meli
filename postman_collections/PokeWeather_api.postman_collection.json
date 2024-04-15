@@ -1,0 +1,162 @@
+{
+	"info": {
+		"_postman_id": "af5e3b7c-1936-4e4e-bd5e-1696bc1f6cbf",
+		"name": "PokeWeather_api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "34269306"
+	},
+	"item": [
+		{
+			"name": "1: Obtener el tipo de un Pokémon por su nombre:",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/pokemon/type?name=bulbasaur",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"pokemon",
+						"type"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "bulbasaur"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "2: Obtener un Pokémon al azar de un tipo específico:",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/pokemon/random?type=rock",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"pokemon",
+						"random"
+					],
+					"query": [
+						{
+							"key": "type",
+							"value": "rock"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "3. Obtener el Pokémon con el nombre más largo de cierto tipo:",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/pokemon/longest?type=flying",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"pokemon",
+						"longest"
+					],
+					"query": [
+						{
+							"key": "type",
+							"value": "flying"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "4. Obtener un Pokémon al azar que contenga letras específicas en su nombre y sea del tipo más fuerte en base al clima actual:",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/pokemon/random_letter?letter=IAM&latitude=4.6486205&longitude=-74.2729596",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"pokemon",
+						"random_letter"
+					],
+					"query": [
+						{
+							"key": "letter",
+							"value": "IAM"
+						},
+						{
+							"key": "latitude",
+							"value": "4.6486205"
+						},
+						{
+							"key": "longitude",
+							"value": "-74.2729596"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "extra: Obtener el nombre de todos los Pokémon:",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/pokemon/names",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"pokemon",
+						"names"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "extra: Obtener los tipos de todos los tipos que existen:",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/pokemon/types",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"pokemon",
+						"types"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
